@@ -6,7 +6,7 @@ package mate.academy
 fun getDivisibleNumbers(numbers: IntArray, divider: Int): IntArray {
     val response = mutableListOf<Int>()
     numbers.forEach {
-        if (it % divider == 0)
+        if (it >= 0 && it % divider == 0)
             response.add(it)
     }
     return response.toIntArray()
