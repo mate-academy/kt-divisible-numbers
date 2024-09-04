@@ -10,3 +10,6 @@ fun getDivisibleNumbers(numbers: IntArray, divider: Int): IntArray {
     }
     return resultList.toIntArray()
 }
+
+// mentors solution
+//  return numbers.filter { it > 0 && it % divider == 0 }.toIntArray()
