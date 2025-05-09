@@ -1,8 +1,7 @@
 package mate.academy
 
-// Implement the function to return an array
-// with only positive numbers that are evenly divisible by `divider`
+const val MIN_POSITIVE = 0
 
 fun getDivisibleNumbers(numbers: IntArray, divider: Int): IntArray {
-
+    return numbers.filter { it > MIN_POSITIVE && it % divider == 0 }.toIntArray()
 }
