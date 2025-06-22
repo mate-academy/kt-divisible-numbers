@@ -1,9 +1,9 @@
 package mate.academy
 
 fun getDivisibleNumbers(numbers: IntArray, divider: Int): IntArray {
-    val list = mutableListOf<Int>()
+    val listInts = mutableListOf<Int>()
     for (number in numbers) {
-        if (number % divider == 0 && number >= 0) list.add(number)
+        if (number % divider == 0 && number >= 0) listInts.add(number)
     }
-    return list.toIntArray()
+    return listInts.toIntArray()
 }
