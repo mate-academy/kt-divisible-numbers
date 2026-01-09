@@ -1,8 +1,10 @@
 package mate.academy
 
-// Implement the function to return an array
-// with only positive numbers that are evenly divisible by `divider`
-
 fun getDivisibleNumbers(numbers: IntArray, divider: Int): IntArray {
-
+    val ar = mutableListOf<Int>()
+    numbers.forEach { i ->
+        if (i > 0 && i % divider == 0)
+            ar.add(i)
+    }
+    return ar.toIntArray()
 }
