@@ -4,5 +4,10 @@ package mate.academy
 // with only positive numbers that are evenly divisible by `divider`
 
 fun getDivisibleNumbers(numbers: IntArray, divider: Int): IntArray {
-
+    val response = mutableListOf<Int>()
+    numbers.forEach {
+        if (it >= 0 && it % divider == 0)
+            response.add(it)
+    }
+    return response.toIntArray()
 }
