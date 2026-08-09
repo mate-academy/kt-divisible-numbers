@@ -4,5 +4,8 @@ package mate.academy
 // with only positive numbers that are evenly divisible by `divider`
 
 fun getDivisibleNumbers(numbers: IntArray, divider: Int): IntArray {
-
+    require(divider != 0) { "divider must not be zero" }
+    return numbers
+        .filter { it > 0 && it % divider == 0}
+        .toIntArray()
 }
